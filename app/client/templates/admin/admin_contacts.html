@@ -1,0 +1,33 @@
+<template name="admin_contacts">
+    
+        <h2 class="admin_header">Редагувати Контакти</h2>
+        
+        <section class="admin_contacts_item_wrap">
+            
+            {{ #with contacts }}
+                {{ #autoForm collection="Contacts" doc=this id="editContacts" type="update" }}
+                
+                    <fieldset>
+                        <div class="admin_item_wrap_ukr">
+                            <h3 class="admin_header_lang">Українською</h3>
+                            {{> afQuickField name='ukrainian.contacts_article_body_top'}}
+                            {{> afQuickField name='ukrainian.contacts_article_body_bottom'}}
+                        </div>
+                        
+                        <div class="admin_item_wrap_eng">
+                            <h3 class="admin_header_lang">Англійською</h3>
+                            {{> afQuickField name='english.contacts_article_body_top'}}
+                            {{> afQuickField name='english.contacts_article_body_bottom'}}
+                        </div>
+                        
+                    </fieldset>
+                    
+                    <button type="submit" class="btn btn-primary admin_btn_confirm"><i class="fa fa-save"></i> ЗБЕРЕГТИ</button>
+                
+                {{ /autoForm }}
+            {{ /with }}
+            
+            
+        </section>  
+    
+</template>

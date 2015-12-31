@@ -1,0 +1,21 @@
+<template name="news_imgs">
+    
+    <div class="news_body_item_img_wrap">
+        {{ #each file in item.files }}
+            
+            {{ #with img_item file.file_id }}
+                
+                <figure class="news_body_item_img_item_big" id="newsItemBig_{{ _id }}">
+                    <div class="close_it_button"></div>
+                    <img src="{{ url }}">
+                </figure>
+                <div class="news_body_item_img_item" id="newsItemSmall_{{ _id }}">
+                    <img src="{{ url }}">
+                </div>
+                
+            {{ /with }}
+            
+        {{ /each }}
+    </div>
+    
+</template>

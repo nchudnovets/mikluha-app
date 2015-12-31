@@ -1,0 +1,122 @@
+.mikluha_news {
+    background: url("../imgs/news_bg_2000.png") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    
+    @media #{$scrn_700_900} {    
+        background: url("../imgs/news_bg_900.png") no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+    } 
+    
+    @media #{$scrn_550_700} {    
+        background: url("../imgs/news_bg_500.png") no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+    } 
+    
+    @media #{$scrn_less_550} {    
+        background: url("../imgs/news_bg_500.png") no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+    } 
+}
+
+.news_container {
+    height: 100%;
+    
+    
+    .main_nav_menu_item-hover_filter {
+        color: #FDF9D3 !important;
+        border-color: #FDF9D3 !important;
+    }
+    
+    .additional_info a {
+        color: #FDF9D3;
+    }
+    
+}
+
+.news_wrap {
+    color: #FDF9D3;
+    
+    .news_header {
+        font-size: 300%;
+        
+        @media screen and (max-height: 750px) {    
+            font-size: 240%;
+        }
+    }
+    
+    .news_body_wrap {
+        position: absolute;
+        width: 55%;
+        right: 0;   
+        top: 115px;
+        bottom: 50px;
+        overflow-y: scroll;
+        
+        @media #{$scrn_700_900} {    
+            width: 70%;
+        } 
+        
+        @media #{$scrn_550_700} {    
+            width: 88%;
+        }
+        
+        @media #{$scrn_less_550} {    
+            width: 95%;
+        }
+        
+        @media screen and (max-height: 750px) {    
+            top: 100px;
+            bottom: 30px;
+        }
+        
+        .news_body_item_wrap {
+            padding-right: 10px;
+            background: rgba(74,65,60,.7);
+            margin-right: 1px;
+            
+            .news_body_item_head {
+                font-size: 150%;
+                margin: 20px 0;
+            }
+            
+            .news_body_item_text {
+                color: #FDF9D3;
+            }
+            
+            .news_body_item_img_wrap {
+                position: relative;
+                
+                .news_body_item_img_item {
+                    display: inline-block;
+                    width: 46%;
+                    text-align: center;
+                    padding: 1%;
+                    vertical-align: top;
+                    
+                    img {
+                        width: 100%;
+                        border: solid 1px;
+                        cursor: pointer;
+                    }
+                }
+                
+                .news_body_item_img_item_big {
+                    @extend %absolute_0;
+                    background: rgba(37,37,37, .7);
+                    z-index: 10;
+                    display: none;
+                    
+                    img {
+                        width: 100%;
+                        border: 1px solid;
+                    }
+                }
+            }
+        }
+    }
+    
+}

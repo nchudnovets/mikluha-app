@@ -1,0 +1,45 @@
+<template name="news">
+    
+    <div class="viewport_wraper mikluha_news"> 
+        <div class="container news_container">
+            <header>
+                {{ >menu }}
+            </header>
+            
+            <section class="news_wrap">
+                <div class="news_body_wrap">
+                    <h1 class="news_header">
+                        {{ #if ukrainian }} НОВИНИ {{ else }} NEWS {{ /if }}
+                    </h1>
+                    
+                {{ #each item in news }}
+                    <article class="news_body_item_wrap">
+                        <h2 class="news_body_item_head">
+                            {{ #if ukrainian }} 
+                                {{ item.ukrainian.news_article_head }} 
+                            {{ else }} 
+                                {{ item.english.news_article_head }} 
+                            {{ /if }}
+                        </h2>
+                        <div class="news_body_item_text">
+                            {{ #if ukrainian }} 
+                                {{{ item.ukrainian.news_article_body }}} 
+                            {{ else }} 
+                                {{{ item.english.news_article_body }}} 
+                            {{ /if }}
+                        </div>
+                                            
+                        {{ >news_imgs item=item }}
+                        
+                    </article>
+                {{ /each }}
+                </div>
+                
+            </section> <!-- news_wrap -->
+            
+            {{ >footer }}
+            
+        </div> <!-- container -->
+    </div> 
+    
+</template>

@@ -1,0 +1,24 @@
+//@import "compass";
+@import "compass/reset";
+@import "compass/css3";
+@font-face {
+    font-family: BebasNeueCyrilic;
+    src: url(../../fonts/Bebas_Neue_Cyrillic.ttf);
+   }
+
+// @import "compass/utilities/sprites";
+// @import "sprites/close_button/*.png";
+// @import "sprites/menu_buttons/*.png";
+// @include all-close_button-sprites;
+// @include all-menu_buttons-sprites;
+
+@import "standards";
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono&subset=latin,cyrillic);
+@import "navigation";
+@import "portrait";
+@import "animations";
+@import "about";
+@import "news";
+@import "contacts";
+@import "gallery";
+@import "admin";

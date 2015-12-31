@@ -1,0 +1,26 @@
+<template name='admin_menu'>
+    
+    <nav class="main_nav_wrap">
+        <a href="#" class="logout">Вийти <i class="fa fa-sign-out"></i></a>
+        
+        <div class="main_nav_menu_wrap">
+            <ul class="main_nav_menu_body">
+                
+                {{#each menu_items}}
+                    <a href="{{ item_link }}_edit">    
+                        <li class="main_nav_menu_item {{ item_class }}">
+                            <div class="main_nav_menu_item-hover_filter">
+                                <p>{{ item_name_ukr }}</p> 
+                            </div>
+                        </li>
+                    </a> 
+                {{/each}}
+               
+                
+                <li class="justfy_helper"></li>
+            </ul>
+        </div> <!-- main_nav_menu_wrap -->
+        
+    </nav> <!-- main_nav_wrap -->
+    
+</template>

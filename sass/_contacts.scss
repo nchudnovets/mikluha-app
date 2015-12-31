@@ -1,0 +1,69 @@
+.mikluha_contacts {
+    background: url("../imgs/contacts_bg_2000.png") no-repeat;
+    background-size: cover;
+    
+    @media #{$scrn_700_900} {    
+        background: url("../imgs/contacts_bg_900.png") no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+    } 
+    
+    @media #{$scrn_550_700} {    
+        background: url("../imgs/contacts_bg_900.png") no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+    } 
+    
+    @media #{$scrn_less_550} {    
+        background: url("../imgs/contacts_bg_900.png") no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+    } 
+    
+    .contacts_container {
+        height: 100%;
+        
+        .contacts_wrap {
+            margin-top: 50px;
+            position: fixed;
+            left: 2%;
+        }
+        
+        .contacts_header {
+            font-size: 300%;
+            margin-left: 2%; 
+            color: #F9C400;
+            
+            @media #{$scrn_less_550} {
+                font-size: 200%;
+            } 
+        }
+        
+        .contacts_body_wrap {
+            color: #F9C400;
+            width: 60%;
+            min-width: 150px;
+            height: 300px;
+            border-radius: 10px;
+            padding: 20px;
+            
+            .contacts_body_country {
+                border-bottom: 1px solid #5A5559;
+                padding-bottom: 20px;
+            }
+            
+            .contacts_body_personal_data {
+                padding: 20px 0;
+                height: 50%;
+                
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    .additional_info a {
+        color: #F9C400;
+    }
+}

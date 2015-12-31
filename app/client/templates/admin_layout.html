@@ -1,0 +1,14 @@
+<template name="admin_layout">
+    <div class="container_admin">
+        {{ #if currentUser }}
+        
+            <header>
+                {{ > admin_menu }}
+            </header>
+            
+            {{> yield}}
+        
+        {{ /if }}  
+    </div>
+    
+</template>

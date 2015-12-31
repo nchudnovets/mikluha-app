@@ -1,0 +1,50 @@
+<template name="admin_news">
+    
+        <h1 class="admin_header">Додати новину</h1>
+        
+        <section class="admin_add_news_item_wrap">
+                
+                {{ #autoForm collection="News" id="addNewsItem" type="insert" }}
+                
+                    <fieldset>
+                        <div class="admin_item_wrap_ukr">
+                            <h3 class="admin_header_lang">Українською</h3>
+                            {{> afQuickField name='ukrainian.news_article_head'}}
+                            {{> afQuickField name='ukrainian.news_article_body'}}
+                        </div>
+                        
+                        <div class="admin_item_wrap_eng">
+                            <h3 class="admin_header_lang">Англійською</h3>
+                            {{> afQuickField name='english.news_article_head'}}
+                            {{> afQuickField name='english.news_article_body'}}
+                        </div>
+                        
+                        <p class="admin_notice">Перед завантаженням фотографії не забудь її стиснути тут: <a href="http://compresspng.com/" target="_blank">для PNG</a>, <a href="http://compressjpg.com/" target="_blank">для JPG</a></p>
+                        
+                        {{> afQuickField name='files'}}
+                    </fieldset>
+                    
+                    <button type="submit" class="btn btn-primary admin_btn_confirm"><i class="fa fa-save"></i> ЗБЕРЕГТИ</button>
+                
+                {{ /autoForm }}
+                
+            <!--</div>-->
+        </section>  
+        
+        <section class="admin_news_list_wrap">
+            <h2 class="admin_header">Розміщені новини</h2>
+            
+            {{ #each item in news }}
+            <div class="admin_list_item">
+                <div class="admin_news_list_item_name">
+                    {{ item.ukrainian.news_article_head }}
+                </div>
+                <div class="admin_news_list_item_actions admin-delete">
+                    {{ #quickRemoveButton collection="News" _id=item._id onError=onError onSuccess=onSuccess beforeRemove=beforeRemove class="btn btn-danger"}}<i class="fa fa-trash"></i>{{/quickRemoveButton}}
+                </div>
+            </div>
+            {{ /each }}
+            
+        </section>
+    
+</template>

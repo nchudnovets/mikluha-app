@@ -1,0 +1,80 @@
+<template name="about">
+    
+    <div class="container">
+            <header>
+                {{ >menu }}
+            </header>
+            
+            {{ #with abouts }}
+            <section class="about_wrap" id="about_body_wrap">
+                <article class="about_text_wrap">
+                    
+                    <h1 class="about_text_head">
+                        {{ about_article_head }}
+                    </h1>
+                    
+                    <div class="about_text_body">
+                        {{{ about_article_body }}}
+                    </div>
+                    
+                    <div class="about_text_body_imgs_wrap">
+                        
+                        {{ >about_additional }}
+                        
+                    </div>
+                    
+                </article> <!-- about_text_wrap -->
+                
+                <aside class="about_img_wrap">
+                    <img src="imgs/parents.png" class="about_img_body">
+                    <div class="about_img_mother">
+                        <a href="http://mironovshof.jimdo.com/%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F/%D0%BD%D0%B0%D1%88%D0%B8-%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B8/zhest-von-mironovshof/" target="_blank">zhest von mironovshof</a>
+                    </div>
+                    <div class="about_img_father">
+                        <a href="http://www.rednock.com/?page_id=1054" target="_blank">rednock havealot</a> 
+                    </div>
+                </aside> <!-- about_img_wrap -->
+                
+            </section> <!-- about_wrap -->    
+                
+            <div class="about_text_body_doc_lg_wrap" id="pedigree_wrap">
+                <div class="filter"><img src="imgs/placeholder_img.png"></div>
+                <div class="close_it_button"></div>
+                <img src="imgs/padigree.jpeg" class="about_text_body_doc_lg_body">
+            </div>
+            
+            <section class="about_standart" id="standart_container">
+                <div class="close_it_button"></div>
+                
+                <div class="about_standart_jumbo">
+                    <img src="imgs/about_standart_jumbo.png" class="about_standart_jumbo_body">
+                </div>
+                
+                <div class="about_standart_body_wrap">
+                    <div class="about_standart_photos_wrap">
+                        
+                        <img src="imgs/standart_bg1.png" class="about_standart_photos_body about_standart_photos_body_left">
+                    
+                        <img src="imgs/standart_bg2.png" class="about_standart_photos_body about_standart_photos_body_mid">
+                        <img src="imgs/standart_bg3.png" class="about_standart_photos_body about_standart_photos_body_right">
+                        
+                    </div> <!-- about_standart_photos_wrap -->
+                    
+                    <article class="about_standart_text_wrap">
+                        <div class="about_standart_text_wrap_body">
+                            
+                            {{{ about_standart_body }}}
+                            
+                        </div>
+                    </article>
+                </div> <!-- about_standart_body_wrap -->
+                
+            </section> <!-- about_standart -->
+            {{ /with }}
+            
+                {{ >footer }}
+               
+            
+        </div> <!-- container -->
+        
+</template>

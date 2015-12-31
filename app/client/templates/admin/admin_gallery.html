@@ -1,0 +1,45 @@
+<template name="admin_gallery">
+    
+        <h1 class="admin_header">Галерея</h1>
+        
+        <section class="admin_gallery_wrap">
+            <p class="admin_notice">Перед завантаженням фотографії не забудь її стиснути тут: <a href="http://compresspng.com/" target="_blank">для PNG</a>, <a href="http://compressjpg.com/" target="_blank">для JPG</a></p>
+            <div class="admin_photo_wrap_hor">
+                <h3 class="admin_header_lang">Горизонтальні</h3>
+                
+                {{> quickForm collection="GalleryHor" type="insert" id="addGalleryImagesHorItem" }}
+                
+                {{ #each file in gallery_Horizontal }}
+                    {{ #with gallery_Horizontal_files_item file.file_id }}
+                        <div class="admin_photo_list_wrap">
+                            <div class="admin_photo_list_item_name">
+                                <img src="{{ url }}">
+                            </div>
+                            <div class="admin_photo_list_item_actions admin-delete">
+                                {{ #quickRemoveButton collection="GalleryHor" _id=file._id onError=onError onSuccess=onSuccess beforeRemove=beforeRemoveHor class="btn btn-danger"}}<i class="fa fa-trash"></i>{{/quickRemoveButton}}
+                            </div>
+                        </div>
+                    {{ /with }}
+                {{ /each }}
+            </div>
+            <div class="admin_photo_wrap_vert">
+                <h3 class="admin_header_lang">Вертикальні</h3>
+                
+                {{> quickForm collection="GalleryVert" type="insert" id="addGalleryImagesVertItem" }}
+                
+                {{ #each file in gallery_Vertical }}
+                    {{ #with gallery_Vertical_files_item file.file_id }}
+                        <div class="admin_photo_list_wrap">
+                            <div class="admin_photo_list_item_name">
+                                <img src="{{ url }}">
+                            </div>
+                            <div class="admin_photo_list_item_actions admin-delete">
+                                {{ #quickRemoveButton collection="GalleryVert" _id=file._id onError=onError onSuccess=onSuccess beforeRemove=beforeRemoveVert class="btn btn-danger"}}<i class="fa fa-trash"></i>{{/quickRemoveButton}}
+                            </div>
+                        </div>
+                    {{ /with }}
+                {{ /each }}
+            </div>
+        </section>  
+        
+</template>

@@ -1,0 +1,36 @@
+<template name="gallery_sliders">
+    
+    <!-- full size imgs views -->
+	<div class="gallery_img_view_filter" id="paranja">
+	    <div class="close_it_button"></div>
+	    
+		<div class="gallery_body_item-landscape-full_wrap" id="fullPicsLandscape">
+		    <div class="gallery_body_item-landscape-full_container slider" id="slider_1">
+			    <img src="imgs/frame_land.png" class="gallery_body_item-landscape-full-frame_img">
+			    <img src="imgs/dog_prev.png" class="gallery_body_item-landscape-frame_prev prev_btn">
+			    <img src="imgs/dog_next.png" class="gallery_body_item-landscape-frame_next next_btn">
+			    
+			    <div class="gallery_body_item_landscape_full_frame imgs_container">
+			        {{ #each galleryHorizontal }}
+				    <img src="{{ url }}" class="gallery_body_item_full_img gallery_body_item_landscape_full_img">
+				    {{ /each }}
+			    </div>
+		    </div> <!-- gallery_body_item-landscape-full_container -->
+		</div> <!-- gallery_body_item-landscape-full_wrap -->
+		
+		<div class="gallery_body_item-portrait-full_wrap" id="fullPicsPortrait">
+		    <div class="gallery_body_item-portrait-full_container slider" id="slider_2">
+			    <img src="imgs/frame_portr.png" class="gallery_body_item-portr-full-frame_img">
+			    <img src="imgs/dog_prev.png" class="gallery_body_item-landscape-frame_prev prev_btn">
+			    <img src="imgs/dog_next.png" class="gallery_body_item-landscape-frame_next next_btn">
+			    
+			    <div class="gallery_body_item_portrait_full_frame imgs_container">
+			        {{ #each galleryVertical }}
+				    <img src="{{ url }}" class="gallery_body_item_full_img gallery_body_item_portrait_full_img">
+				    {{ /each }}
+			    </div>
+		    </div> <!-- gallery_body_item-portrait-full_container -->
+		</div> <!-- gallery_body_item-portrait-full_wrap -->
+	</div> <!-- Paranja -->
+    
+</template>

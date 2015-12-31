@@ -1,0 +1,51 @@
+<template name="admin_about">
+   
+        <h2 class="admin_header">Редагувати Про Миклуху</h2>
+        
+        <section class="admin_about_item_wrap">
+            {{ #with abouts }}
+                {{ #autoForm collection="About" doc=this id="aditAboutItem" type="update" }}
+                
+                    <fieldset>
+                        <div class="admin_item_wrap_ukr">
+                            <h3 class="admin_header_lang">Українською</h3>
+                            {{> afQuickField name='ukrainian.about_article_head'}}
+                            {{> afQuickField name='ukrainian.about_article_body'}}
+                        </div>
+                        
+                        <div class="admin_item_wrap_eng">
+                            <h3 class="admin_header_lang">Англійською</h3>
+                            {{> afQuickField name='english.about_article_head'}}
+                            {{> afQuickField name='english.about_article_body'}}
+                        </div>
+                    </fieldset>
+                    
+                    <button type="submit" class="btn btn-primary admin_btn_confirm"><i class="fa fa-save"></i> ЗБЕРЕГТИ</button>
+                
+                {{ /autoForm }}
+            {{ /with }}
+        </section>  
+        
+        <section class="admin_about_standart_wrap">
+            <h2 class="admin_header">Редагувати Про Породу</h2>
+            
+            {{ #with abouts }}
+                {{ #autoForm collection="About" doc=this id="aditAboutStandartItem" type="update" }}
+                
+                    <fieldset>
+                        <div class="admin_item_wrap_ukr">
+                        {{> afQuickField name='ukrainian.about_standart_body' }}
+                        </div>
+                        
+                        <div class="admin_item_wrap_eng">
+                        {{> afQuickField name='english.about_standart_body' }}
+                        </div>
+                    </fieldset>
+                    
+                    <button type="submit" class="btn btn-primary admin_btn_confirm"><i class="fa fa-save"></i> ЗБЕРЕГТИ</button>
+                
+                {{ /autoForm }}
+            {{ /with }}
+            
+        </section>
+</template>

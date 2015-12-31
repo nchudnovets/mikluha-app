@@ -1,0 +1,77 @@
+.micklukha_logo_container {
+    transition: all 0.7s ease 0.6s;
+}
+
+.micklukha_navigation_container {
+    transition: all 0.7s ease 0.8s;
+}
+
+.micklukha_container_photo_body-paint {
+    z-index: 10;
+    transition: all 1s ease;
+}
+
+.micklukha_container_photo_frame {
+    @include animation(swinging 7s ease-in-out 0s);  
+    @include transform-origin(50%, 2%);
+}
+
+.gallery_body_item_full_img {
+    transition: all 0.5s ease;
+}
+
+.falling {
+    @include animation(fallingDown 0.7s ease-in-out 0.1s forwards);
+}
+
+.move_to_left {
+    @include animation(slidingRightToLeft 0.7s ease-in-out forwards);
+}
+
+.move_to_right {
+    @include animation(slidingLeftToRight 0.7s ease-in-out forwards);
+}
+
+.move_to_center {
+    @include animation(fadeInFromCenter 0.7s ease-in-out forwards);
+}
+
+
+@include keyframes (swinging) {
+    0% {@include transform( rotate(0) )}
+    10% {@include transform( rotate(10deg) )}
+    20% {@include transform( rotate(-9deg) )}
+    30% {@include transform( rotate(8deg) )}
+    40% {@include transform( rotate(-7deg) )}
+    50% {@include transform( rotate(6deg) )}
+    60% {@include transform( rotate(-5deg) )}
+    70% {@include transform( rotate(4deg) )}
+    80% {@include transform( rotate(-3deg) )}
+    90% {@include transform( rotate(2deg) )}
+    100% {@include transform( rotate(0) )}
+}
+
+@include keyframes (fallingDown) {
+    0% {@include transform( translateY(0) )}
+    100% {@include transform( translateY(3000px) )}
+}
+
+@include keyframes (slideLeftRow) {
+    0% {@include transform( translateX(0) )}
+    100% {@include transform( translateX(-1000px) )}
+}
+
+@include keyframes (slidingRightToLeft) {
+    0% {@include transform( translateX(0) )}
+    100% {@include transform( translateX(-100%) )}
+}
+
+@include keyframes (slidingLeftToRight) {
+    0% {@include transform( translateX(0) )}
+    100% {@include transform( translateX(100%) )}
+}
+
+@include keyframes (fadeInFromCenter) {
+    0% {@include transform( scale(0.0001, 0.0001) )}
+    100% {@include transform( scale(1, 1) )}
+}

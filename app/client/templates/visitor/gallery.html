@@ -1,0 +1,51 @@
+<template name="gallery">
+    
+    <div class="viewport_wraper mikluha_gallery"> 
+        <div class="container gallery_container">
+            <header>
+                {{ >menu }}
+            </header>
+            
+            <section class="gallery_wrap">
+                <h1 class="gallery_header">
+                    {{ #if ukrainian }} ГАЛЕРЕЯ {{ else }} GALLERY {{ /if }}
+                </h1>
+                <div class="gallery_body_wrap">
+                    <div class="gallery_body_items_wrap">
+                        <div class="gallery_body_item gallery_body_item-landscape" id='previewLandscape'>
+                            <div class="gallery_body_item-landscape_frame">
+                                <img src="imgs/frame_land.png" class="gallery_body_item-landscape_frame_img">
+                                
+                                <div class="gallery_body_item-landscape_img_container">
+                                    {{ #with gallery_first_Horizontal_img }}
+                                        <img src="{{ url }}" class="gallery_body_item_landscape_img">
+                                    {{ /with }}
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="gallery_body_item gallery_body_item-portrait" id='previewPortrait'>
+                            <div class="gallery_body_item-portrait_frame">
+                                <img src="imgs/frame_portr.png" class="gallery_body_item-portrait_frame_img">
+                                
+                                <div class="gallery_body_item-portrait_img_container">
+                                    {{ #with gallery_first_Vertical_img }}
+                                        <img src="{{ url }}" class="gallery_body_item_landscape_img">
+                                    {{ /with }}
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- gallery_body_items_wrap -->
+                    
+                    {{ >gallery_sliders }}
+                    
+                    
+                </div> <!-- gallery_body_wrap -->
+                
+            </section> <!-- gallery_wrap -->
+            
+            {{ >footer }}
+            
+        </div> <!-- gallery_container -->
+    </div>    
+    
+</template>

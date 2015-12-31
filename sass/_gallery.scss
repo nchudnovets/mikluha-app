@@ -1,0 +1,278 @@
+.mikluha_gallery {
+    background: url("../imgs/gallery_bg.png") no-repeat;
+    background-size: cover;
+    overflow-y: auto;
+    
+    @media #{$scrn_less_550}  {    
+        background: url("../imgs/gallery_bg_xs.png") no-repeat;
+        background-size: cover;
+    } 
+    
+    .gallery_container {
+        
+        .main_nav_menu_item {
+            
+            .main_nav_menu_item-hover_filter {
+                color: #A9B594;
+            }
+        }
+        
+        .gallery_wrap {
+            
+            .gallery_header {
+                font-size: 380%;
+                transform: rotate(-4deg);
+                margin-left: 20%;
+                color: #A9B594;
+            }
+            
+            .gallery_body_wrap {
+                
+                
+                .gallery_body_items_wrap {
+                    text-align: center;
+                    padding: 2% 0;
+                    
+                    .gallery_body_item {
+                        margin: 3% auto;
+                        min-width: 300px;
+                        padding: 3% 0;
+                        
+                        @media screen and (min-width: 801px) {
+                            display: inline-block;
+                            margin: 1% 2%;
+                            padding: 0;
+                        }
+                        
+                        img {
+                            width: 100%;
+                            display: block;
+                            cursor: pointer;
+                        }
+                    }
+                    
+                    .gallery_body_item-landscape {
+                        width: 50%;
+                        transform: rotate(3deg);
+                        
+                        .gallery_body_item-landscape_frame {
+                            position: relative;
+                            
+                            .gallery_body_item-landscape_frame_img {
+                                
+                            }
+                            
+                            .gallery_body_item-landscape_img_container {
+                                position: absolute;
+                                top: 16%;
+                                left: 10%;
+                                right: 10%;
+                                bottom: 15%;
+                                z-index: -1;
+                            }
+                        }
+                    }
+                    
+                    .gallery_body_item-portrait {
+                        width: 35%;
+                        transform: rotate(-3deg);
+                        
+                        .gallery_body_item-portrait_frame {
+                            position: relative;
+                            
+                            .gallery_body_item-portrait_frame_img {
+                                
+                            }
+                            
+                            .gallery_body_item-portrait_img_container {
+                                position: absolute;
+                                top: 10%;
+                                left: 16%;
+                                right: 14%;
+                                bottom: 10%;
+                                z-index: -1;
+                            }
+                        }
+                    }
+                }
+                
+                .gallery_img_view_filter {
+                    position: fixed;
+                	top: 0;
+                	right: 0;
+                	bottom: 0;
+                	left: 0;
+                	background-color: rgba(155,160,126, 0.8);
+                	overflow-y: auto;
+                	-o-transform: scale(0.0001, 0.0001);
+                    -moz-transform: scale(0.0001, 0.0001);
+                    -ms-transform: scale(0.0001, 0.0001);
+                    -webkit-transform: scale(0.0001, 0.0001);
+                	transform: scale(0.0001, 0.0001);
+                
+                
+                    .gallery_body_item-landscape-frame_prev {
+                        position: absolute;
+                        left: -61px;
+                        bottom: 10px;
+                        cursor: pointer;
+                        
+                        @media #{$scrn_550_700} {    
+                            left: 20%;
+                        }
+                        
+                        @media #{$scrn_less_550} {    
+                            left: 20%;
+                            bottom: -3%;
+                            -o-transform: scale(0.8);
+                            -moz-transform: scale(0.8);
+                            -ms-transform: scale(0.8);
+                            -webkit-transform: scale(0.8);
+                            transform: scale(0.8);
+                        }
+                    }
+                    
+                    .gallery_body_item-landscape-frame_next {
+                        position: absolute;
+                        right: -61px;
+                        bottom: 10px;
+                        cursor: pointer;
+                        
+                        @media #{$scrn_550_700} {    
+                            right: 20%;
+                        }
+                        
+                        @media #{$scrn_less_550} {    
+                            right: 20%;
+                            bottom: -3%;
+                            -o-transform: scale(0.8);
+                            -moz-transform: scale(0.8);
+                            -ms-transform: scale(0.8);
+                            -webkit-transform: scale(0.8);
+                            transform: scale(0.8);
+                        }
+                    }
+                    
+                    
+                    .gallery_body_item-landscape-full_container,
+                    .gallery_body_item-portrait-full_container {
+                        margin: 0 auto;
+                        position: relative;
+                    }
+                    
+                    
+                    .gallery_body_item-landscape-full_wrap {
+                        display: none;
+                        position: absolute;
+                        top: 12%;
+                        left: 15%;
+                        right: 15%;
+                        text-align: center;
+                        //overflow: hidden;
+                        
+                        @media #{$scrn_700_900} {    
+                            top: 10%;
+                            left: 10%;
+                            right: 10%;
+                        } 
+                        
+                        @media #{$scrn_550_700} {    
+                            left: 2%;
+                            right: 2%;
+                        }
+                        
+                        @media #{$scrn_less_550} {    
+                            left: 5px;
+                            right: 5px;
+                        }
+                        
+                        .gallery_body_item-landscape-full_container {
+                            max-width: 980px;
+                        }
+                        
+                        .gallery_body_item-landscape-full-frame_img {
+                            width: 100%;
+                        }
+                        
+                        .gallery_body_item_landscape_full_frame {
+                            margin: 0 auto;
+                            white-space: nowrap;
+                            font-size: 0;
+                            position: absolute;
+                            top: 15%;
+                            left: 10%;
+                            bottom: 15%;
+                            right: 10%;
+                            z-index: -1;
+                            overflow: hidden;
+                            
+                            .gallery_body_item_landscape_full_img {
+                                display: inline-block;
+                                vertical-align: bottom;
+                                width: 100%;
+                            }
+                        }
+                    }
+                    
+                    .gallery_body_item-portrait-full_wrap {
+                        display: none;
+                        position: absolute;
+                        top: 8%;
+                        left: 15%;
+                        right: 15%;
+                        text-align: center;
+                        //overflow: hidden;
+                        
+                        @media #{$scrn_700_900} {    
+                            top: 10%;
+                            left: 10%;
+                            right: 10%;
+                        } 
+                        
+                        @media #{$scrn_550_700} {    
+                            left: 2%;
+                            right: 2%;
+                        }
+                        
+                        @media #{$scrn_less_550} {    
+                            left: 5px;
+                            right: 5px;
+                        }
+                        
+                        .gallery_body_item-portrait-full_container{
+                            max-width: 580px;
+                        }
+                        
+                        .gallery_body_item-portr-full-frame_img {
+                            width: 100%;
+                        }
+                        
+                        .gallery_body_item_portrait_full_frame {
+                            margin: 0 auto;
+                            white-space: nowrap;
+                            font-size: 0;
+                            position: absolute;
+                            top: 10%;
+                            left: 16%;
+                            bottom: 11%;
+                            right: 14%;
+                            z-index: -1;
+                            overflow: hidden;
+                            
+                            
+                            .gallery_body_item_portrait_full_img {
+                                display: inline-block;
+                                vertical-align: bottom;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .additional_info a {
+        color: #778870;
+    }
+}

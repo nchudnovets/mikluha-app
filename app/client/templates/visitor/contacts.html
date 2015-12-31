@@ -1,0 +1,42 @@
+<template name="contacts">
+    
+    <div class="viewport_wraper mikluha_contacts"> 
+        <div class="container contacts_container">
+            <header>
+                {{ >menu }}
+            </header>
+            
+            <section class="contacts_wrap">
+                <h1 class="contacts_header">
+                    {{ #if ukrainian }} КОНТАКТИ {{ else }} CONTACTS {{ /if }}
+                </h1>
+                
+                {{ #with contacts }}
+                <div class="contacts_body_wrap">
+                    <div class="contacts_body_country">
+                        {{ #if ukrainian }} 
+                            {{{ contacts.ukrainian.contacts_article_body_top }}} 
+                        {{ else }} 
+                            {{{ contacts.english.contacts_article_body_top }}} 
+                        {{ /if }}
+                    </div>
+                    <div class="contacts_body_personal_data">
+                        {{ #if ukrainian }} 
+                            {{{ contacts.ukrainian.contacts_article_body_bottom }}} 
+                        {{ else }} 
+                            {{{ contacts.english.contacts_article_body_bottom }}} 
+                        {{ /if }}
+                        <p><img src="imgs/mail.png"></p>
+                    </div>
+                </div>
+                {{ /with }}
+                
+            </section> <!-- contacts_wrap -->
+            
+            {{ >footer }}
+            
+        </div> <!-- contacts_container -->
+    
+    </div> <!-- mikluha_contacts -->  
+    
+</template>

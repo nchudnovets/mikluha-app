@@ -1,0 +1,40 @@
+<template name='menu'>
+    
+    <nav class="main_nav_wrap">
+        
+        <div class="main_nav_menu_wrap">
+            <ul class="main_nav_menu_body">
+                
+                {{#each menu_items}}
+                    <a href="{{ item_link }}">    
+                        <li class="main_nav_menu_item {{ item_class }}">
+                            <div class="main_nav_menu_item-hover_filter">
+                                {{ #if ukrainian }}
+                                <p>{{ item_name_ukr }}</p> 
+                                {{ else }}
+                                <p>{{ item_name_eng }}</p>
+                                {{ /if }}
+                            </div>
+                        </li>
+                    </a> 
+                {{/each}}
+               
+                
+                <li class="justfy_helper"></li>
+            </ul>
+            
+            {{ >menu_langs }}
+        </div> <!-- main_nav_menu_wrap -->
+        
+    </nav> <!-- main_nav_wrap -->
+    
+</template>
+
+<template name="menu_langs">
+    
+    <ul class="main_nav_langs_wrap">
+        <li class="main_nav_langs_item main_nav_langs_item-ukr" id="ukr_btn"></li>
+        <li class="main_nav_langs_item main_nav_langs_item-eng" id="eng_btn"></li>
+    </ul>
+    
+</template>
