@@ -1,9 +1,10 @@
 <template name="admin_news">
     
-        <h1 class="admin_header">Додати новину</h1>
+        <h1 class="admin_header">Новини Миклухи</h1>
         
-        <section class="admin_add_news_item_wrap">
-                
+        {{ #if sessionAddNewsItemMode }}
+            <section class="admin_add_news_item_wrap">
+                    
                 {{ #autoForm collection="News" id="addNewsItem" type="insert" }}
                 
                     <fieldset>
@@ -24,25 +25,24 @@
                         {{> afQuickField name='files'}}
                     </fieldset>
                     
-                    <button type="submit" class="btn btn-primary admin_btn_confirm"><i class="fa fa-save"></i> ЗБЕРЕГТИ</button>
+                    <button type="submit" class="btn btn-primary admin_btn_confirm" id="addNewsItemConfirm"><i class="fa fa-save"></i> ЗБЕРЕГТИ</button>
+                    <div class="btn btn-default admin_btn_confirm" id="addNewsItemClose"><i class="fa fa-close"></i> ЗАКРИТИ</div>
                 
                 {{ /autoForm }}
-                
-            <!--</div>-->
-        </section>  
+                    
+                <!--</div>-->
+            </section>  
+        {{ else }}
+            <div class="admin_add_news_item_btn btn btn-default admin_btn_confirm"><i class="fa fa-plus"></i> Додати новину</div>
+        {{ /if }}
         
         <section class="admin_news_list_wrap">
             <h2 class="admin_header">Розміщені новини</h2>
             
             {{ #each item in news }}
-            <div class="admin_list_item">
-                <div class="admin_news_list_item_name">
-                    {{ item.ukrainian.news_article_head }}
-                </div>
-                <div class="admin_news_list_item_actions admin-delete">
-                    {{ #quickRemoveButton collection="News" _id=item._id onError=onError onSuccess=onSuccess beforeRemove=beforeRemove class="btn btn-danger"}}<i class="fa fa-trash"></i>{{/quickRemoveButton}}
-                </div>
-            </div>
+            
+                {{ >admin_news_item item=item }}
+                
             {{ /each }}
             
         </section>

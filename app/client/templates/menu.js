@@ -24,39 +24,10 @@ Template.registerHelper('menu_items', function(){
             item_link:'/contacts',
             item_class: 'menu_buttons-contacts_btn'
         } 
-    ]
+    ];
     
     return menu_items;
-})
-
-// Template.menu.helpers({
-//     menu_items: [
-//         {
-//             item_name_ukr: 'МИКЛУХА',
-//             item_name_eng: 'MIKLOUHO',
-//             item_link:'/about',
-//             item_class: 'menu_buttons-about_btn'
-//         },
-//         {
-//             item_name_ukr: 'НОВИНИ',
-//             item_name_eng: 'NEWS',
-//             item_link:'/news',
-//             item_class: 'menu_buttons-news_btn'
-//         },
-//         {
-//             item_name_ukr: 'ГАЛЕРЕЯ',
-//             item_name_eng: 'GALLERY',
-//             item_link:'/gallery',
-//             item_class: 'menu_buttons-gallery_btn'
-//         },
-//         {
-//             item_name_ukr: 'КОНТАКТИ',
-//             item_name_eng: 'CONTACTS',
-//             item_link:'/contacts',
-//             item_class: 'menu_buttons-contacts_btn'
-//         } 
-//     ]
-// });
+});
 
 
 Template.registerHelper("ukrainian", function(){

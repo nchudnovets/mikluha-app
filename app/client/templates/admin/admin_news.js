@@ -6,28 +6,20 @@ Template.admin_news.helpers({
         return News.find({}, {sort: {created: -1}});
     },
     
-    onError: function () {
-        return function (error) { alert("Щось не вийшло, спробуй ще раз!"); console.log(error); };
+    sessionAddNewsItemMode: function(){
+        return Session.get('addNewsItemMode');
+    }
+});
+
+
+
+Template.admin_news.events({
+    "click .admin_add_news_item_btn": function(){
+        Session.set('addNewsItemMode', true);
     },
     
-    onSuccess: function () {
-        return function (result) { return };
-    },
-    
-    beforeRemove: function () {
-        return function (collection, id) {
-            var doc = collection.findOne(id);
-            
-            if (confirm('Ти впевнений, що хочеш видалити "' + doc.ukrainian.news_article_head + '"?')) {
-                if(doc.files){
-                    for(var i=0; i<doc.files.length; i++){
-                        NewsImages.remove({_id: doc.files[i].file_id})
-                    };
-                }
-                
-                this.remove();
-            }
-        };
+    "click #addNewsItemConfirm, click #addNewsItemClose": function(){
+        Session.set('addNewsItemMode', false);
     }
 });
 

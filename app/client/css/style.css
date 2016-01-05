@@ -1990,31 +1990,32 @@ a:hover, a:focus {
   text-align: center;
   color: red;
   cursor: pointer;
+  padding: 0.6% 1%;
 }
-/* line 81, ../../../sass/_admin.scss */
+/* line 82, ../../../sass/_admin.scss */
 .container_admin .admin_photo_list_wrap {
   padding: 1%;
 }
-/* line 87, ../../../sass/_admin.scss */
+/* line 88, ../../../sass/_admin.scss */
 .container_admin .admin_photo_list_item_name img {
   max-width: 150px;
   max-height: 80px;
 }
-/* line 93, ../../../sass/_admin.scss */
+/* line 94, ../../../sass/_admin.scss */
 .container_admin .admin_notice {
   text-align: center;
   font-size: 70%;
   color: #286090;
 }
 
-/* line 100, ../../../sass/_admin.scss */
+/* line 101, ../../../sass/_admin.scss */
 .login_form_wrap {
   widows: 350px;
   margin: 50px auto;
   text-transform: none;
 }
 
-/* line 106, ../../../sass/_admin.scss */
+/* line 107, ../../../sass/_admin.scss */
 .logout {
   position: relative;
   top: 20px;
