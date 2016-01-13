@@ -1,4 +1,3 @@
-Meteor.subscribe('news_images');
 
 Template.news_imgs.helpers({
     news_imgs: function(){

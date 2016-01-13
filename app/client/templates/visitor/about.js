@@ -1,4 +1,3 @@
-Meteor.subscribe('abouts');
 
 Template.about.helpers({
     abouts: function() {

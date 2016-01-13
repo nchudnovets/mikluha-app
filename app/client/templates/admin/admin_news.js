@@ -1,5 +1,3 @@
-Meteor.subscribe('news');
-Meteor.subscribe('news_images');
 
 Template.admin_news.helpers({
     news: function() {

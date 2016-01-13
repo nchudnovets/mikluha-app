@@ -1,5 +1,3 @@
-Meteor.subscribe('news');
-
 
 Template.admin_news_item.onCreated(function(){
     this.showItemEditForm = new ReactiveVar( false );

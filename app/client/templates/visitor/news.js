@@ -1,4 +1,3 @@
-Meteor.subscribe('news');
 
 Template.news.helpers({
     news: function(){

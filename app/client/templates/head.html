@@ -2,7 +2,7 @@
     <!--[if lte IE 9]>
         <script type="text/javascript">
             alert('Нажаль браузери Opera Mini та Internet Explorer 9 та нижчих версій не в змозі коректно відобразити цей сайт. \nБудь ласка, використовуйте будь який інший браузер. \n\nSorry, but Opera Mini and Internet Explorer 9 or lower versions can\'t show this site correctly. \nPlease, use another browser.');
-            window.location = "blank";
+            window.close();
         </script>
     <![endif]-->
     <meta charset="UTF-8">
@@ -13,8 +13,6 @@
     <title></title>
     <script>
         if(Object.prototype.toString.call(window.operamini) === "[object OperaMini]"){
-            alert('Нажаль браузери Opera Mini та Internet Explorer 9 та нижчих версій не в змозі коректно відобразити цей сайт. \nБудь ласка, використовуйте будь який інший браузер. \n\nSorry, but Opera Mini and Internet Explorer 9 or lower versions can\'t show this site correctly. \nPlease, use another browser.');
-            window.location = "blank";
-        }
+            window.location = "blank";}
     </script>
 </head>

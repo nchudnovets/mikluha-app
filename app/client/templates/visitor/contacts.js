@@ -1,4 +1,3 @@
-Meteor.subscribe('contacts');
 
 Template.contacts.helpers({
     contacts: function (){

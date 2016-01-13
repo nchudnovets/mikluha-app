@@ -1,5 +1,3 @@
-Meteor.subscribe('gallery_images_hor');
-Meteor.subscribe('gallery_images_vert');
 
 Template.gallery.helpers({
     gallery_first_Horizontal_img: function() {

@@ -1,7 +1,3 @@
-Meteor.subscribe('gallery_images_hor');
-Meteor.subscribe('gallery_hor');
-Meteor.subscribe('gallery_images_vert');
-Meteor.subscribe('gallery_vert');
 
 Template.admin_gallery.helpers({
     gallery_Horizontal: function() {
