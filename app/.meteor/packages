@@ -19,7 +19,7 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 iron:router
 aldeed:collection2
 mizzao:bootstrap-3
-msavin:mongol
+#msavin:mongol
 aldeed:autoform
 aldeed:delete-button
 cfs:filesystem
@@ -34,3 +34,4 @@ accounts-password
 accounts-ui
 reactive-var
 sacha:spin
+dferber:prerender

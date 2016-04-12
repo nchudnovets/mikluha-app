@@ -11,8 +11,10 @@
 			    <img src="imgs/dog_next.png" class="gallery_body_item-landscape-frame_next next_btn">
 			    
 			    <div class="gallery_body_item_landscape_full_frame imgs_container">
-			        {{ #each galleryHorizontal }}
-				    <img src="{{ url }}" class="gallery_body_item_full_img gallery_body_item_landscape_full_img">
+			        {{ #each file in galleryHorizontal }}
+			        	{{ #with galleryHorizontalFile file.file_id }}
+				    		<img src="{{ url }}" class="gallery_body_item_full_img gallery_body_item_landscape_full_img">
+				    	{{ /with }}
 				    {{ /each }}
 			    </div>
 		    </div> <!-- gallery_body_item-landscape-full_container -->
@@ -25,8 +27,10 @@
 			    <img src="imgs/dog_next.png" class="gallery_body_item-landscape-frame_next next_btn">
 			    
 			    <div class="gallery_body_item_portrait_full_frame imgs_container">
-			        {{ #each galleryVertical }}
-				    <img src="{{ url }}" class="gallery_body_item_full_img gallery_body_item_portrait_full_img">
+			        {{ #each file in galleryVertical }}
+			        	{{ #with galleryVerticalFile file.file_id }}
+				    		<img src="{{ url }}" class="gallery_body_item_full_img gallery_body_item_portrait_full_img">
+				    	{{ /with }}
 				    {{ /each }}
 			    </div>
 		    </div> <!-- gallery_body_item-portrait-full_container -->

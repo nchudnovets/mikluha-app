@@ -1,11 +1,19 @@
 
 Template.gallery_sliders.helpers({
     galleryHorizontal: function() {
-        return GalleryImagesHor.find();
+        return GalleryHor.find();
+    },
+    
+    galleryHorizontalFile: function(id) {
+        return GalleryImagesHor.findOne({_id: id});
     },
     
     galleryVertical: function() {
-        return GalleryImagesVert.find();
+        return GalleryVert.find();
+    },
+    
+    galleryVerticalFile: function(id) {
+        return GalleryImagesVert.findOne({_id: id});
     }
 });
 

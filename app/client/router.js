@@ -46,7 +46,9 @@ Router.route('/gallery', {
     name: "gallery",
     waitOn: function() {
         return [Meteor.subscribe('gallery_images_hor'), 
-                Meteor.subscribe('gallery_images_vert')
+                Meteor.subscribe('gallery_images_vert'),
+                Meteor.subscribe('gallery_hor'),
+                Meteor.subscribe('gallery_vert')
                 ];
     },
     layoutTemplate: 'main_layout',
