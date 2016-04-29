@@ -6,7 +6,7 @@ $main_photo_width_min: 250px;
 
 .viewport_wraper {
     @extend %absolute_0;
-    overflow: hidden;   
+    overflow: auto;   
 }
 
 .micklukha_container {
@@ -225,7 +225,7 @@ $main_photo_width_min: 250px;
 
 .micklukha_narrow{
     position: absolute;
-    bottom: -35px;
+    bottom: -70px;
     left: -50%;
     right: -50%;
     -o-transform: rotate(-7deg);
@@ -247,7 +247,7 @@ $main_photo_width_min: 250px;
     }
     
     @media #{$scrn_less_550} {    
-        font-size: 73%;
+        font-size: 60%;
         text-align: center;
     }
     

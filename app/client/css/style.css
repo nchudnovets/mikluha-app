@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono&subset=latin,cyrillic);
-/* line 5, ../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../usr/local/rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../usr/local/rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../usr/local/rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../usr/local/rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../usr/local/rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../usr/local/rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../usr/local/rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../usr/local/rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../usr/local/rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../usr/local/rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -90,7 +90,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 24, ../../../sass/_standards.scss */
 body {
-  font-family: BebasNeueCyrilic, 'Roboto Mono', cursive, serif, sans-serif;
+  font-family: BebasNeueCyrilic, 'Roboto Mono', cursive, serif, sans-serif !important;
   font-size: 25px;
   color: #000;
 }
@@ -319,7 +319,7 @@ a:hover, a:focus {
 
 /* line 7, ../../../sass/_portrait.scss */
 .viewport_wraper {
-  overflow: hidden;
+  overflow: auto;
 }
 
 /* line 12, ../../../sass/_portrait.scss */
@@ -555,7 +555,7 @@ a:hover, a:focus {
 /* line 226, ../../../sass/_portrait.scss */
 .micklukha_narrow {
   position: absolute;
-  bottom: -35px;
+  bottom: -70px;
   left: -50%;
   right: -50%;
   -o-transform: rotate(-7deg);
@@ -583,7 +583,7 @@ a:hover, a:focus {
 @media screen and (max-width: 550px) {
   /* line 226, ../../../sass/_portrait.scss */
   .micklukha_narrow {
-    font-size: 73%;
+    font-size: 60%;
     text-align: center;
   }
 }
@@ -1025,11 +1025,13 @@ a:hover, a:focus {
   width: 47%;
   margin-top: 15px;
   float: left;
+  font-size: 80%;
 }
 @media screen and (min-width: 701px) and (max-width: 900px) {
   /* line 18, ../../../sass/_about.scss */
   .about_img_wrap {
     width: 35%;
+    font-size: 60%;
   }
 }
 @media screen and (min-width: 551px) and (max-width: 700px) {
@@ -1049,61 +1051,63 @@ a:hover, a:focus {
     margin: 40% auto 0 auto;
   }
 }
-/* line 42, ../../../sass/_about.scss */
+/* line 44, ../../../sass/_about.scss */
 .about_img_wrap .about_img_mother {
   left: 5%;
 }
 @media screen and (min-width: 701px) and (max-width: 900px) {
-  /* line 42, ../../../sass/_about.scss */
+  /* line 44, ../../../sass/_about.scss */
   .about_img_wrap .about_img_mother {
     left: 2%;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 42, ../../../sass/_about.scss */
+  /* line 44, ../../../sass/_about.scss */
   .about_img_wrap .about_img_mother {
     left: 2%;
   }
 }
-/* line 55, ../../../sass/_about.scss */
+/* line 57, ../../../sass/_about.scss */
 .about_img_wrap .about_img_father {
   left: 57%;
   right: -30%;
 }
 @media screen and (min-width: 701px) and (max-width: 900px) {
-  /* line 55, ../../../sass/_about.scss */
+  /* line 57, ../../../sass/_about.scss */
   .about_img_wrap .about_img_father {
     left: 52%;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 55, ../../../sass/_about.scss */
+  /* line 57, ../../../sass/_about.scss */
   .about_img_wrap .about_img_father {
     left: 52%;
   }
 }
 
-/* line 70, ../../../sass/_about.scss */
+/* line 72, ../../../sass/_about.scss */
 .about_img_body {
   width: 100%;
 }
 
-/* line 74, ../../../sass/_about.scss */
+/* line 76, ../../../sass/_about.scss */
 .about_img_mother,
 .about_img_father {
   position: absolute;
   bottom: 53%;
   color: #797977;
+  font-size: 75%;
+  z-index: 20;
 }
 @media screen and (min-width: 701px) and (max-width: 900px) {
-  /* line 74, ../../../sass/_about.scss */
+  /* line 76, ../../../sass/_about.scss */
   .about_img_mother,
   .about_img_father {
     font-size: 70%;
   }
 }
 
-/* line 85, ../../../sass/_about.scss */
+/* line 89, ../../../sass/_about.scss */
 .about_text_wrap {
   display: inline-block;
   width: 47%;
@@ -1114,25 +1118,25 @@ a:hover, a:focus {
   z-index: 15;
 }
 @media screen and (min-width: 701px) and (max-width: 900px) {
-  /* line 85, ../../../sass/_about.scss */
+  /* line 89, ../../../sass/_about.scss */
   .about_text_wrap {
     width: 59%;
     font-size: 95%;
   }
 }
 @media screen and (min-width: 551px) and (max-width: 700px) {
-  /* line 85, ../../../sass/_about.scss */
+  /* line 89, ../../../sass/_about.scss */
   .about_text_wrap {
     width: 95%;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 85, ../../../sass/_about.scss */
+  /* line 89, ../../../sass/_about.scss */
   .about_text_wrap {
     width: 95%;
   }
 }
-/* line 108, ../../../sass/_about.scss */
+/* line 112, ../../../sass/_about.scss */
 .about_text_wrap .about_text_head {
   font-size: 365%;
   margin-bottom: 30px;
@@ -1141,46 +1145,58 @@ a:hover, a:focus {
   text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.75);
 }
 @media screen and (min-width: 1051px) and (max-width: 1200px) {
-  /* line 108, ../../../sass/_about.scss */
+  /* line 112, ../../../sass/_about.scss */
   .about_text_wrap .about_text_head {
     font-size: 330%;
   }
 }
 @media screen and (min-width: 901px) and (max-width: 1050px) {
-  /* line 108, ../../../sass/_about.scss */
+  /* line 112, ../../../sass/_about.scss */
   .about_text_wrap .about_text_head {
     font-size: 260%;
   }
 }
 @media screen and (min-width: 701px) and (max-width: 900px) {
-  /* line 108, ../../../sass/_about.scss */
+  /* line 112, ../../../sass/_about.scss */
   .about_text_wrap .about_text_head {
     font-size: 290%;
   }
 }
 @media screen and (min-width: 551px) and (max-width: 700px) {
-  /* line 108, ../../../sass/_about.scss */
+  /* line 112, ../../../sass/_about.scss */
   .about_text_wrap .about_text_head {
     font-size: 285%;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 108, ../../../sass/_about.scss */
+  /* line 112, ../../../sass/_about.scss */
   .about_text_wrap .about_text_head {
     font-size: 260%;
   }
 }
+/* line 140, ../../../sass/_about.scss */
+.about_text_wrap .about_text_body {
+  font-family: BebasNeueCyrilic, 'Roboto Mono', cursive, serif, sans-serif !important;
+  font-size: 25px !important;
+  color: #000 !important;
+}
+/* line 144, ../../../sass/_about.scss */
+.about_text_wrap .about_text_body span, .about_text_wrap .about_text_body div, .about_text_wrap .about_text_body p, .about_text_wrap .about_text_body a {
+  font-family: BebasNeueCyrilic, 'Roboto Mono', cursive, serif, sans-serif !important;
+  font-size: 25px !important;
+  color: #000 !important;
+}
 @media screen and (max-width: 550px) {
-  /* line 136, ../../../sass/_about.scss */
+  /* line 140, ../../../sass/_about.scss */
   .about_text_wrap .about_text_body {
     font-size: 95%;
   }
 }
-/* line 142, ../../../sass/_about.scss */
+/* line 153, ../../../sass/_about.scss */
 .about_text_wrap .about_text_body .parents_names {
   color: #797977;
 }
-/* line 147, ../../../sass/_about.scss */
+/* line 158, ../../../sass/_about.scss */
 .about_text_wrap .about_text_body_imgs_wrap {
   position: absolute;
   right: 0;
@@ -1190,20 +1206,20 @@ a:hover, a:focus {
   z-index: -1;
 }
 @media screen and (min-width: 551px) and (max-width: 700px) {
-  /* line 147, ../../../sass/_about.scss */
+  /* line 158, ../../../sass/_about.scss */
   .about_text_wrap .about_text_body_imgs_wrap {
     left: 2%;
     font-size: 160%;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 147, ../../../sass/_about.scss */
+  /* line 158, ../../../sass/_about.scss */
   .about_text_wrap .about_text_body_imgs_wrap {
     left: 2%;
     font-size: 120%;
   }
 }
-/* line 165, ../../../sass/_about.scss */
+/* line 176, ../../../sass/_about.scss */
 .about_text_wrap .about_text_body_imgs_wrap .about_text_body_standart_pic_wrap {
   position: absolute;
   top: 16%;
@@ -1216,16 +1232,16 @@ a:hover, a:focus {
   transform: rotate(-8deg);
 }
 @media screen and (max-width: 550px) {
-  /* line 165, ../../../sass/_about.scss */
+  /* line 176, ../../../sass/_about.scss */
   .about_text_wrap .about_text_body_imgs_wrap .about_text_body_standart_pic_wrap {
     right: 36%;
   }
 }
-/* line 180, ../../../sass/_about.scss */
+/* line 191, ../../../sass/_about.scss */
 .about_text_wrap .about_text_body_imgs_wrap .about_text_body_standart_pic_wrap img {
   width: 100%;
 }
-/* line 184, ../../../sass/_about.scss */
+/* line 195, ../../../sass/_about.scss */
 .about_text_wrap .about_text_body_imgs_wrap .about_text_body_standart_pic_wrap .about_additional_links_standart {
   position: absolute;
   left: 10%;
@@ -1234,22 +1250,22 @@ a:hover, a:focus {
   visibility: hidden;
 }
 @media screen and (max-width: 550px) {
-  /* line 184, ../../../sass/_about.scss */
+  /* line 195, ../../../sass/_about.scss */
   .about_text_wrap .about_text_body_imgs_wrap .about_text_body_standart_pic_wrap .about_additional_links_standart {
     bottom: 23%;
   }
 }
-/* line 195, ../../../sass/_about.scss */
+/* line 206, ../../../sass/_about.scss */
 .about_text_wrap .about_text_body_imgs_wrap .about_text_body_standart_pic_wrap .about_additional_links_standart p {
   text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.75);
   cursor: pointer;
   color: #fff;
 }
-/* line 205, ../../../sass/_about.scss */
+/* line 216, ../../../sass/_about.scss */
 .about_text_wrap .about_text_body_imgs_wrap .about_text_body_standart_pic_wrap:hover .about_additional_links_standart, .about_text_wrap .about_text_body_imgs_wrap .about_text_body_standart_pic_wrap:focus .about_additional_links_standart {
   visibility: visible;
 }
-/* line 211, ../../../sass/_about.scss */
+/* line 222, ../../../sass/_about.scss */
 .about_text_wrap .about_text_body_imgs_wrap .about_text_body_doc_wrap {
   position: absolute;
   top: -20%;
@@ -1257,16 +1273,16 @@ a:hover, a:focus {
   left: 45%;
 }
 @media screen and (max-width: 550px) {
-  /* line 211, ../../../sass/_about.scss */
+  /* line 222, ../../../sass/_about.scss */
   .about_text_wrap .about_text_body_imgs_wrap .about_text_body_doc_wrap {
     left: 37%;
   }
 }
-/* line 221, ../../../sass/_about.scss */
+/* line 232, ../../../sass/_about.scss */
 .about_text_wrap .about_text_body_imgs_wrap .about_text_body_doc_wrap img {
   width: 100%;
 }
-/* line 225, ../../../sass/_about.scss */
+/* line 236, ../../../sass/_about.scss */
 .about_text_wrap .about_text_body_imgs_wrap .about_text_body_doc_wrap .about_additional_links_rodov {
   position: absolute;
   left: 30%;
@@ -1275,24 +1291,24 @@ a:hover, a:focus {
   visibility: hidden;
 }
 @media screen and (max-width: 550px) {
-  /* line 225, ../../../sass/_about.scss */
+  /* line 236, ../../../sass/_about.scss */
   .about_text_wrap .about_text_body_imgs_wrap .about_text_body_doc_wrap .about_additional_links_rodov {
     left: 24%;
     bottom: 40%;
   }
 }
-/* line 237, ../../../sass/_about.scss */
+/* line 248, ../../../sass/_about.scss */
 .about_text_wrap .about_text_body_imgs_wrap .about_text_body_doc_wrap .about_additional_links_rodov p {
   text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.75);
   cursor: pointer;
   color: #231e18;
 }
-/* line 246, ../../../sass/_about.scss */
+/* line 257, ../../../sass/_about.scss */
 .about_text_wrap .about_text_body_imgs_wrap .about_text_body_doc_wrap:hover .about_additional_links_rodov, .about_text_wrap .about_text_body_imgs_wrap .about_text_body_doc_wrap:focus .about_additional_links_rodov {
   visibility: visible;
 }
 
-/* line 258, ../../../sass/_about.scss */
+/* line 269, ../../../sass/_about.scss */
 .close_it_button {
   position: absolute;
   top: 5px;
@@ -1306,14 +1322,14 @@ a:hover, a:focus {
   cursor: pointer;
   z-index: 20;
 }
-/* line 271, ../../../sass/_about.scss */
+/* line 282, ../../../sass/_about.scss */
 .close_it_button:hover, .close_it_button:focus {
   background-color: #4F4F4F;
   background-position: 2px 2px;
   border-color: #2C2C2C;
 }
 
-/* line 280, ../../../sass/_about.scss */
+/* line 291, ../../../sass/_about.scss */
 .about_text_body_doc_lg_wrap {
   position: absolute;
   top: 0;
@@ -1324,22 +1340,22 @@ a:hover, a:focus {
   z-index: 50;
   background-color: #fff;
 }
-/* line 290, ../../../sass/_about.scss */
+/* line 301, ../../../sass/_about.scss */
 .about_text_body_doc_lg_wrap .filter {
   z-index: 10;
 }
-/* line 294, ../../../sass/_about.scss */
+/* line 305, ../../../sass/_about.scss */
 .about_text_body_doc_lg_wrap .filter img {
   width: 100%;
   height: 100%;
 }
-/* line 300, ../../../sass/_about.scss */
+/* line 311, ../../../sass/_about.scss */
 .about_text_body_doc_lg_wrap .about_text_body_doc_lg_body {
   width: 100%;
   z-index: -1;
 }
 
-/* line 306, ../../../sass/_about.scss */
+/* line 317, ../../../sass/_about.scss */
 .about_standart {
   position: absolute;
   top: 0;
@@ -1348,67 +1364,91 @@ a:hover, a:focus {
   display: none;
   z-index: 50;
 }
-/* line 314, ../../../sass/_about.scss */
+/* line 325, ../../../sass/_about.scss */
 .about_standart .about_standart_jumbo {
   background-color: #fff;
   max-height: 360px;
   overflow: hidden;
 }
-/* line 319, ../../../sass/_about.scss */
+/* line 330, ../../../sass/_about.scss */
 .about_standart .about_standart_jumbo .about_standart_jumbo_body {
   width: 100%;
   margin-top: -14%;
 }
-/* line 325, ../../../sass/_about.scss */
+/* line 336, ../../../sass/_about.scss */
 .about_standart .about_standart_body_wrap {
   background-color: #fff;
   margin-top: -50px;
 }
-/* line 329, ../../../sass/_about.scss */
+/* line 340, ../../../sass/_about.scss */
 .about_standart .about_standart_body_wrap .about_standart_photos_wrap {
   position: relative;
   height: 230px;
 }
 @media screen and (max-width: 550px) {
-  /* line 329, ../../../sass/_about.scss */
+  /* line 340, ../../../sass/_about.scss */
   .about_standart .about_standart_body_wrap .about_standart_photos_wrap {
     height: 175px;
   }
 }
-/* line 337, ../../../sass/_about.scss */
+/* line 348, ../../../sass/_about.scss */
 .about_standart .about_standart_body_wrap .about_standart_photos_wrap .about_standart_photos_body {
   position: absolute;
   max-width: 32%;
   min-width: 150px;
 }
-/* line 343, ../../../sass/_about.scss */
+/* line 354, ../../../sass/_about.scss */
 .about_standart .about_standart_body_wrap .about_standart_photos_wrap .about_standart_photos_body_left {
   bottom: 0;
 }
-/* line 347, ../../../sass/_about.scss */
+/* line 358, ../../../sass/_about.scss */
 .about_standart .about_standart_body_wrap .about_standart_photos_wrap .about_standart_photos_body_mid {
   bottom: 16px;
   right: 123px;
 }
-/* line 352, ../../../sass/_about.scss */
+/* line 363, ../../../sass/_about.scss */
 .about_standart .about_standart_body_wrap .about_standart_photos_wrap .about_standart_photos_body_right {
   bottom: 120px;
   right: 0;
 }
 @media screen and (max-width: 550px) {
-  /* line 352, ../../../sass/_about.scss */
+  /* line 363, ../../../sass/_about.scss */
   .about_standart .about_standart_body_wrap .about_standart_photos_wrap .about_standart_photos_body_right {
     bottom: 60px;
   }
 }
-/* line 362, ../../../sass/_about.scss */
+/* line 373, ../../../sass/_about.scss */
 .about_standart .about_standart_body_wrap .about_standart_text_wrap {
   padding: 2%;
 }
 @media screen and (max-width: 550px) {
-  /* line 362, ../../../sass/_about.scss */
+  /* line 373, ../../../sass/_about.scss */
   .about_standart .about_standart_body_wrap .about_standart_text_wrap {
     font-size: 90%;
+  }
+}
+/* line 384, ../../../sass/_about.scss */
+.about_standart .about_standart_body_wrap .about_standart_text_wrap .about_standart_text_wrap_body {
+  font-family: BebasNeueCyrilic, 'Roboto Mono', cursive, serif, sans-serif !important;
+  font-size: 25px !important;
+  color: #000 !important;
+}
+@media screen and (max-width: 550px) {
+  /* line 384, ../../../sass/_about.scss */
+  .about_standart .about_standart_body_wrap .about_standart_text_wrap .about_standart_text_wrap_body {
+    font-size: 90% !important;
+  }
+}
+/* line 391, ../../../sass/_about.scss */
+.about_standart .about_standart_body_wrap .about_standart_text_wrap .about_standart_text_wrap_body span, .about_standart .about_standart_body_wrap .about_standart_text_wrap .about_standart_text_wrap_body div, .about_standart .about_standart_body_wrap .about_standart_text_wrap .about_standart_text_wrap_body p, .about_standart .about_standart_body_wrap .about_standart_text_wrap .about_standart_text_wrap_body a {
+  font-family: BebasNeueCyrilic, 'Roboto Mono', cursive, serif, sans-serif !important;
+  font-size: 25px !important;
+  color: #000 !important;
+}
+@media screen and (max-width: 550px) {
+  /* line 391, ../../../sass/_about.scss */
+  .about_standart .about_standart_body_wrap .about_standart_text_wrap .about_standart_text_wrap_body span, .about_standart .about_standart_body_wrap .about_standart_text_wrap .about_standart_text_wrap_body div, .about_standart .about_standart_body_wrap .about_standart_text_wrap .about_standart_text_wrap_body p, .about_standart .about_standart_body_wrap .about_standart_text_wrap .about_standart_text_wrap_body a {
+    font-size: 90% !important;
   }
 }
 
@@ -1518,13 +1558,19 @@ a:hover, a:focus {
 }
 /* line 86, ../../../sass/_news.scss */
 .news_wrap .news_body_wrap .news_body_item_wrap .news_body_item_text {
-  color: #FDF9D3;
+  color: #FDF9D3 !important;
+  font-family: BebasNeueCyrilic, 'Roboto Mono', cursive, serif, sans-serif !important;
 }
-/* line 90, ../../../sass/_news.scss */
+/* line 89, ../../../sass/_news.scss */
+.news_wrap .news_body_wrap .news_body_item_wrap .news_body_item_text span, .news_wrap .news_body_wrap .news_body_item_wrap .news_body_item_text div, .news_wrap .news_body_wrap .news_body_item_wrap .news_body_item_text p, .news_wrap .news_body_wrap .news_body_item_wrap .news_body_item_text a {
+  font-family: BebasNeueCyrilic, 'Roboto Mono', cursive, serif, sans-serif !important;
+  font-size: 25px !important;
+}
+/* line 95, ../../../sass/_news.scss */
 .news_wrap .news_body_wrap .news_body_item_wrap .news_body_item_img_wrap {
   position: relative;
 }
-/* line 93, ../../../sass/_news.scss */
+/* line 98, ../../../sass/_news.scss */
 .news_wrap .news_body_wrap .news_body_item_wrap .news_body_item_img_wrap .news_body_item_img_item {
   display: inline-block;
   width: 46%;
@@ -1532,19 +1578,19 @@ a:hover, a:focus {
   padding: 1%;
   vertical-align: top;
 }
-/* line 100, ../../../sass/_news.scss */
+/* line 105, ../../../sass/_news.scss */
 .news_wrap .news_body_wrap .news_body_item_wrap .news_body_item_img_wrap .news_body_item_img_item img {
   width: 100%;
   border: solid 1px;
   cursor: pointer;
 }
-/* line 107, ../../../sass/_news.scss */
+/* line 112, ../../../sass/_news.scss */
 .news_wrap .news_body_wrap .news_body_item_wrap .news_body_item_img_wrap .news_body_item_img_item_big {
   background: rgba(37, 37, 37, 0.7);
   z-index: 10;
   display: none;
 }
-/* line 113, ../../../sass/_news.scss */
+/* line 118, ../../../sass/_news.scss */
 .news_wrap .news_body_wrap .news_body_item_wrap .news_body_item_img_wrap .news_body_item_img_item_big img {
   width: 100%;
   border: 1px solid;
@@ -1574,7 +1620,7 @@ a:hover, a:focus {
 @media screen and (max-width: 550px) {
   /* line 1, ../../../sass/_contacts.scss */
   .mikluha_contacts {
-    background: url("../imgs/contacts_bg_900.png") no-repeat;
+    background: url("../imgs/contacts_bg_500.jpg") no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
   }
@@ -1588,20 +1634,21 @@ a:hover, a:focus {
   margin-top: 50px;
   position: fixed;
   left: 2%;
+  height: 400px;
 }
-/* line 32, ../../../sass/_contacts.scss */
+/* line 33, ../../../sass/_contacts.scss */
 .mikluha_contacts .contacts_container .contacts_header {
   font-size: 300%;
   margin-left: 2%;
   color: #F9C400;
 }
 @media screen and (max-width: 550px) {
-  /* line 32, ../../../sass/_contacts.scss */
+  /* line 33, ../../../sass/_contacts.scss */
   .mikluha_contacts .contacts_container .contacts_header {
     font-size: 200%;
   }
 }
-/* line 42, ../../../sass/_contacts.scss */
+/* line 43, ../../../sass/_contacts.scss */
 .mikluha_contacts .contacts_container .contacts_body_wrap {
   color: #F9C400;
   width: 60%;
@@ -1610,21 +1657,35 @@ a:hover, a:focus {
   border-radius: 10px;
   padding: 20px;
 }
-/* line 50, ../../../sass/_contacts.scss */
+@media only screen and (max-height: 600px) {
+  /* line 43, ../../../sass/_contacts.scss */
+  .mikluha_contacts .contacts_container .contacts_body_wrap {
+    overflow: auto;
+  }
+}
+/* line 54, ../../../sass/_contacts.scss */
 .mikluha_contacts .contacts_container .contacts_body_wrap .contacts_body_country {
   border-bottom: 1px solid #5A5559;
   padding-bottom: 20px;
 }
-/* line 55, ../../../sass/_contacts.scss */
+/* line 59, ../../../sass/_contacts.scss */
 .mikluha_contacts .contacts_container .contacts_body_wrap .contacts_body_personal_data {
   padding: 20px 0;
   height: 50%;
 }
-/* line 59, ../../../sass/_contacts.scss */
+/* line 63, ../../../sass/_contacts.scss */
 .mikluha_contacts .contacts_container .contacts_body_wrap .contacts_body_personal_data img {
   width: 100%;
 }
-/* line 66, ../../../sass/_contacts.scss */
+/* line 68, ../../../sass/_contacts.scss */
+.mikluha_contacts .contacts_container .contacts_body_wrap .contacts_body_fb {
+  margin: 20px 0;
+}
+/* line 70, ../../../sass/_contacts.scss */
+.mikluha_contacts .contacts_container .contacts_body_wrap .contacts_body_fb img {
+  max-width: 75px;
+}
+/* line 77, ../../../sass/_contacts.scss */
 .mikluha_contacts .additional_info a {
   color: #F9C400;
 }
@@ -1733,20 +1794,20 @@ a:hover, a:focus {
 .mikluha_gallery .gallery_container .gallery_wrap .gallery_body_wrap .gallery_img_view_filter .gallery_body_item-landscape-frame_prev {
   position: absolute;
   left: -61px;
-  bottom: 10px;
+  bottom: 44%;
   cursor: pointer;
 }
 @media screen and (min-width: 551px) and (max-width: 700px) {
   /* line 114, ../../../sass/_gallery.scss */
   .mikluha_gallery .gallery_container .gallery_wrap .gallery_body_wrap .gallery_img_view_filter .gallery_body_item-landscape-frame_prev {
-    left: 20%;
+    left: 0;
   }
 }
 @media screen and (max-width: 550px) {
   /* line 114, ../../../sass/_gallery.scss */
   .mikluha_gallery .gallery_container .gallery_wrap .gallery_body_wrap .gallery_img_view_filter .gallery_body_item-landscape-frame_prev {
-    left: 20%;
-    bottom: -3%;
+    left: 0;
+    bottom: 44%;
     -o-transform: scale(0.8);
     -moz-transform: scale(0.8);
     -ms-transform: scale(0.8);
@@ -1758,20 +1819,20 @@ a:hover, a:focus {
 .mikluha_gallery .gallery_container .gallery_wrap .gallery_body_wrap .gallery_img_view_filter .gallery_body_item-landscape-frame_next {
   position: absolute;
   right: -61px;
-  bottom: 10px;
+  bottom: 44%;
   cursor: pointer;
 }
 @media screen and (min-width: 551px) and (max-width: 700px) {
   /* line 135, ../../../sass/_gallery.scss */
   .mikluha_gallery .gallery_container .gallery_wrap .gallery_body_wrap .gallery_img_view_filter .gallery_body_item-landscape-frame_next {
-    right: 20%;
+    right: 0;
   }
 }
 @media screen and (max-width: 550px) {
   /* line 135, ../../../sass/_gallery.scss */
   .mikluha_gallery .gallery_container .gallery_wrap .gallery_body_wrap .gallery_img_view_filter .gallery_body_item-landscape-frame_next {
-    right: 20%;
-    bottom: -3%;
+    right: 0;
+    bottom: 44%;
     -o-transform: scale(0.8);
     -moz-transform: scale(0.8);
     -ms-transform: scale(0.8);

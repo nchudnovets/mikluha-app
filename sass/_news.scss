@@ -84,7 +84,12 @@
             }
             
             .news_body_item_text {
-                color: #FDF9D3;
+                color: #FDF9D3 !important;
+                font-family: BebasNeueCyrilic, 'Roboto Mono', cursive, serif, sans-serif !important;
+                span, div, p, a {
+                    font-family: BebasNeueCyrilic, 'Roboto Mono', cursive, serif, sans-serif !important;
+                    font-size: 25px !important;
+                }
             }
             
             .news_body_item_img_wrap {

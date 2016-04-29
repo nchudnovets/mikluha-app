@@ -114,16 +114,16 @@
                     .gallery_body_item-landscape-frame_prev {
                         position: absolute;
                         left: -61px;
-                        bottom: 10px;
+                        bottom: 44%;
                         cursor: pointer;
                         
                         @media #{$scrn_550_700} {    
-                            left: 20%;
+                            left: 0;
                         }
                         
                         @media #{$scrn_less_550} {    
-                            left: 20%;
-                            bottom: -3%;
+                            left: 0;
+                            bottom: 44%;
                             -o-transform: scale(0.8);
                             -moz-transform: scale(0.8);
                             -ms-transform: scale(0.8);
@@ -135,16 +135,16 @@
                     .gallery_body_item-landscape-frame_next {
                         position: absolute;
                         right: -61px;
-                        bottom: 10px;
+                        bottom: 44%;
                         cursor: pointer;
                         
                         @media #{$scrn_550_700} {    
-                            right: 20%;
+                            right: 0;
                         }
                         
                         @media #{$scrn_less_550} {    
-                            right: 20%;
-                            bottom: -3%;
+                            right: 0;
+                            bottom: 44%;
                             -o-transform: scale(0.8);
                             -moz-transform: scale(0.8);
                             -ms-transform: scale(0.8);

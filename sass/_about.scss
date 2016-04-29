@@ -21,9 +21,11 @@
     width: 47%;
     margin-top: 15px;
     float: left;
+    font-size: 80%;
     
     @media #{$scrn_700_900} {    
         width: 35%;
+        font-size: 60%;
     }
     
     @media #{$scrn_550_700} {    
@@ -76,6 +78,8 @@
     position: absolute;
     bottom: 53%;
     color: #797977;
+    font-size: 75%;
+    z-index: 20;
     
     @media #{$scrn_700_900} {    
         font-size: 70%;
@@ -134,7 +138,14 @@
     }
     
     .about_text_body {
-        
+        font-family: BebasNeueCyrilic, 'Roboto Mono', cursive, serif, sans-serif !important;
+        font-size: 25px !important;
+        color: #000 !important;
+        span, div, p, a {
+            font-family: BebasNeueCyrilic, 'Roboto Mono', cursive, serif, sans-serif !important;
+            font-size: 25px !important;
+            color: #000 !important;
+        }
         @media #{$scrn_less_550} {    
             font-size: 95%;
         }
@@ -360,20 +371,33 @@
         }
         
         .about_standart_text_wrap {
-                padding: 2%;
+            padding: 2%;
+            
+            @media #{$scrn_less_550} {    
+                font-size: 90%;
+            }
+            
+            .about_standart_text_wrap_head {
                 
+            }
+            
+            .about_standart_text_wrap_body {
+                font-family: BebasNeueCyrilic, 'Roboto Mono', cursive, serif, sans-serif !important;
+                font-size: 25px !important;
+                color: #000 !important;
                 @media #{$scrn_less_550} {    
-                    font-size: 90%;
+                    font-size: 90% !important;
                 }
-                
-                .about_standart_text_wrap_head {
-                    
-                }
-                
-                .about_standart_text_wrap_body {
-                    
+                span, div, p, a {
+                    font-family: BebasNeueCyrilic, 'Roboto Mono', cursive, serif, sans-serif !important;
+                    font-size: 25px !important;
+                    color: #000 !important;
+                    @media #{$scrn_less_550} {    
+                        font-size: 90% !important;
+                    }
                 }
             }
+        }
     }
     
 }
